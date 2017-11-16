@@ -10,8 +10,8 @@ where it must be that the wave function's whose charge density is to be plotted 
 dimension from GCOEFF.txt file).
 So if 'WaveFcn.132.1.100.100.1.npy' is in my directory with chrg_plot.py, I would run 'python chrg_plot.py 133 1 100 100 1'.
 
-Default is to plot in x-y plane. To change this, go to lines 60 and 62 and alter 'image = pchrg[:,:,0]' to whatever cut you want out of pchrg. For example, 
-pchrg[0,:,:] would give y-z plane charge density.
+Default is to plot in x-y plane. To change this, go to lines 60 and 62 and alter 'image = pchrg[: ,: ,0]' to whatever cut you want out of pchrg. For example, 
+pchrg[0, :, :] would give y-z plane charge density.
 If you look at the script, you will find there are 5 or 6 other argument types possible. These probaably won't be useful to you, but feel free to ask me
 if something catches interest and it's not clear how it works.
 
